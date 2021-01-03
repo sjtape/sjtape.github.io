@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+}
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  background-color: #191919;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/*===============
+    Typography
+=================*/
+h1 {
+  color: #11A800;
+  font-size: 3.5rem;
+  line-height: 1em;
+}
+
+h1 span {
+  font-size: 3rem;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*===============
+    Layout
+=================*/
+.wrapper {
+  max-width: 1640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container {
+  padding: 1em;
+}
+
+/*===============
+    Header
+=================*/
+header {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .lang {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 1rem;
+}
+
+header .lang #eng {
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+  border-right: 1px dotted #9C9C9C;
+}
+
+header .lang a {
+  color: #9C9C9C;
+  font-size: 1rem;
+}
+
+header .lang a:hover,
+header .lang a:focus {
+  font-size: 1.5rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header li:not(:last-child) {
+  margin-right: 0.5em;
+}
+
+header a {
+  font-size: 2rem;
+}
+
+header a:hover,
+header a:focus {
+  color: #11A800;
+  font-size: 3rem;
+  -webkit-transition: 10ms ease-in-out;
+  transition: 10ms ease-in-out;
+}
+
+header a:active {
+  font-size: 2rem;
+}
+
+header .mail {
+  display: none;
+}
+
+/*===============
+    section
+=================*/
+section {
+  background-color: #404040;
+  padding-top: 4em;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+section p {
+  color: #9C9C9C;
+  margin-bottom: 3em;
+}
+
+.cta {
+  text-align: center;
+}
+
+.cta a {
+  color: #11A800;
+  display: inline-block;
+  width: 10em;
+  padding: 0.5em;
+  border: 3px solid #11A800;
+  margin-right: 0.5em;
+  font-weight: 500;
+  margin-bottom: 3em;
+}
+
+.cta a:hover,
+.cta a:focus {
+  color: #fff;
+  background-color: #11A800;
+}
+
+.cta a:active {
+  font-size: 0.8rem;
+}
+
+.project {
+  background-color: rgba(25, 25, 25, 0.7);
+  padding: 1em 0;
+}
+
+.project h2 {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #404040;
+}
+
+.project li {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.project a {
+  margin: 0 auto;
+  display: inline-block;
+  opacity: 60%;
+}
+
+.project a:hover,
+.project a:focus {
+  opacity: 100%;
+}
+
+.project a:active {
+  width: initial;
+}
+
+/*===============
+    Footer
+=================*/
+footer {
+  text-align: center;
+  color: #404040;
+}
+
+footer a {
+  color: #11A800;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #fff;
+}
+
+@media only screen and (max-width: 375px) {
+  .cta a {
+    font-size: 0.8rem;
+    width: 10em;
+    padding: 0.4em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    margin: 0 1em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 4em;
+  }
+  section h2 {
+    font-size: 1.2rem;
+  }
+  section p {
+    margin-top: 0.5rem;
+  }
+  .left {
+    justify-self: flex-start;
+    margin-right: 1.5em;
+    margin: auto;
+  }
+  .cta {
+    text-align: left;
+  }
+  .btn {
+    text-align: center;
+  }
+  .project a:hover,
+  .project a:focus {
+    width: 104%;
+    opacity: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

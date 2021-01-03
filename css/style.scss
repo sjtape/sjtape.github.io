@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+$black:#191919;
+$white:#fff;
+$green:#11A800;
+$gray:#404040;
+$light-gray:#9C9C9C;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 100ms ease-in-out;
+}
+
+body {
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: $black;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+
+/*===============
+    Typography
+=================*/
+h1 {
+    color: $green;
+    font-size: 3.5rem;
+    line-height: 1em;
+
+    span {
+        font-size: 3rem;
+        color: $white;
+    }
+
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: $white;
+}
+
+
+/*===============
+    Layout
+=================*/
+.wrapper {
+    max-width: 1640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container {
+    padding: 1em;
+}
+
+/*===============
+    Header
+=================*/
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .lang {
+        align-self: flex-start;
+        margin: 1rem;
+
+        #eng {
+            padding-right: 0.5rem;
+            margin-right: 0.5rem;
+            border-right: 1px dotted $light-gray;
+        }
+
+        a {
+            color: $light-gray;
+            font-size: 1rem;
+        }
+
+        a:hover,
+        a:focus {
+            font-size: 1.5rem;
+        }
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    li:not(:last-child) {
+        margin-right: 0.5em;
+
+    }
+
+    a {
+        font-size: 2rem;
+    }
+
+    a:hover,
+    a:focus {
+        color: $green;
+        font-size: 3rem;
+        transition: 10ms ease-in-out;
+    }
+
+    a:active {
+        font-size: 2rem;
+    }
+
+    .mail {
+        display: none;
+    }
+}
+
+/*===============
+    section
+=================*/
+section {
+    background-color: $gray;
+    padding-top: 4em;
+    text-align: left;
+    margin-bottom: 1em;
+
+    p {
+        color: $light-gray;
+        margin-bottom: 3em;
+    }
+}
+
+.cta {
+    text-align: center;
+
+    a {
+        color: $green;
+        display: inline-block;
+        width: 10em;
+        padding: 0.5em;
+        border: 3px solid $green;
+        margin-right: 0.5em;
+        font-weight: 500;
+        margin-bottom: 3em;
+    }
+
+    a:hover,
+    a:focus {
+        color: $white;
+        background-color: $green;
+    }
+
+    a:active {
+        font-size: 0.8rem;
+    }
+}
+
+.project {
+    background-color: rgba(25, 25, 25, 0.7);
+    padding: 1em 0;
+
+
+    h2 {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid $gray;
+    }
+
+    li {
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+
+    a {
+        margin: 0 auto;
+        display: inline-block;
+        opacity: 60%;
+
+    }
+
+    a:hover,
+    a:focus {
+        opacity: 100%;
+    }
+
+    a:active {
+        width: initial;
+    }
+
+}
+
+/*===============
+    Footer
+=================*/
+footer {
+    text-align: center;
+    color: $gray;
+
+    a {
+        color: $green;
+    }
+
+    a:hover,
+    a:focus {
+        color: $white;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .cta a {
+        font-size: 0.8rem;
+        width: 10em;
+        padding: 0.4em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        margin: 0 1em 1em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 4em;
+
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-top: 0.5rem;
+        }
+
+    }
+
+    .left {
+        justify-self: flex-start;
+        margin-right: 1.5em;
+        margin: auto;
+    }
+
+
+
+    .cta {
+        text-align: left;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .project {
+
+        a:hover,
+        a:focus {
+            width: 104%;
+            opacity: 100%;
+        }
+    }
+}
